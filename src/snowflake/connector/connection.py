@@ -226,6 +226,10 @@ DEFAULT_CONFIGURATION: dict[str, tuple[Any, type | tuple[type, ...]]] = {
         True,
         bool,
     ),  # Enable sending retryReason in response header for query-requests
+    "disable_console_login": (
+        False,
+        bool,
+    ),  # Disable console login and fall back to getting SSO URL from GS
 }
 
 APPLICATION_RE = re.compile(r"[\w\d_]+")
